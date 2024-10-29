@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Viajes</title>
+    <link rel="stylesheet" href="proyecto.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Reservar Viaje</h2>
+
+    <label for="cliente">Nombre del Cliente:</label>
+    <input type="text" id="cliente" placeholder="Ingrese su nombre">
+
+    <label for="apellido">Apellido del Cliente:</label>
+    <input type="text" id="apellido" placeholder="Ingrese su apellido">
+
+    <label for="edad">Edad del Cliente:</label>
+    <input type="number" id="edad" placeholder="Ingrese su edad" min="0">
+
+    <label for="fecha">Fecha del Viaje:</label>
+    <input type="date" id="fecha">
+
+    <label for="destino">Destino:</label>
+    <select id="destino">
+        <option value="elPital">El Pital - $20</option>
+        <option value="conchagua">Conchagua - $30</option>
+        <option value="golfoFonseca">Golfo de Fonseca - $40</option>
+    </select>
+
+    <label for="entradas">Cantidad de Entradas:</label>
+    <input type="number" id="entradas" placeholder="Número de entradas" min="1">
+
+    <label for="pago">Forma de Pago:</label>
+    <select id="pago">
+        <option value="efectivo">Efectivo</option>
+        <option value="credito">Crédito</option>
+    </select>
+
+    <button onclick=" CalcularTotal()">Realizar Pago</button>
+
+    <div class="result" id="result"></div>
+</div>
+
+<script src="proyecto.js"></script>
